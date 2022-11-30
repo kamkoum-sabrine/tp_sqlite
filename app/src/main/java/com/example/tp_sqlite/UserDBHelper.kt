@@ -5,6 +5,8 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
 class UserDBHelper (context: Context):SQLiteOpenHelper(context, DATABASE_NAME,null ,DATABASE_VERSION){
+    public val db = writableDatabase
+
     companion object {
         // If you change the database schema, you must increment the database version.
         public val DATABASE_VERSION = 1
@@ -25,10 +27,11 @@ class UserDBHelper (context: Context):SQLiteOpenHelper(context, DATABASE_NAME,nu
         public val SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS " + TABLE_NAME
     }
     override fun onCreate(p0: SQLiteDatabase?) {
-        
+        db.execSQL(SQL_CREATE_ENTRIES)
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
-        TODO("Not yet implemented")
+        db.execSQL(SQL_DELETE_ENTRIES)
+        onCreate(db)
     }
 }
