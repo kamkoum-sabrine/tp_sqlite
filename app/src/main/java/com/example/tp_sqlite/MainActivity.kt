@@ -21,6 +21,6 @@ class MainActivity : AppCompatActivity() {
         classe = findViewById(R.id.classe)
         btn_submit = findViewById(R.id.submit)
 
-        btn_submit.setOnLongClickListener()
+
     }
 }
