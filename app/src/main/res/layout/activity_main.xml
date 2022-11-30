@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/nom_prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nom et prenom"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+
+
+    <EditText
+        android:id="@+id/datenaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date de naissance"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+
+    <EditText
+        android:id="@+id/classe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Classe"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="30dp" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:src="@drawable/add"/>
+
+
+
+</LinearLayout>
